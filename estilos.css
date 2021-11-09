@@ -1,0 +1,201 @@
+/* ACÁ IMPORTO LAS OTRAS HOJAS DE ESTILOS */
+@import url(menu.css);
+@import url(banner.css);
+    
+/* ACÁ DECLARO LAS FUENTES A USAR */
+
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@font-face {
+  font-family: 'Exo';
+  src: url("https://fonts.gstatic.com/s/exo/v11/4UaZrEtFpBI4f1ZSIK9d4LjJ4lM3OwRmOw.woff2");
+}
+
+/*
+////////////////////////////////////////////
+////////////////////////////////////////////
+*/
+/*ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background: #333;
+    color: #fff;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+footer .contenedor {
+    width: 100%;
+    padding: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    background: #333;
+    color: #fff;
+}
+
+.copy {
+    font-size: 20x;
+}
+
+.sociales {
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+}
+
+.sociales a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+////////////////////////////////////////////
+////////////////////////////////////////////
+*/
+/*ESTILOS INDEX */
+
+h1 {
+    margin: 20px;
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+}
+
+
+#resumen {
+    width: 100%;
+    text-indent: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+#info .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#info article {
+    margin: 15px;
+}
+
+#info img, video {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 15px;
+}
+
+#info p {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    max-width: 280px;
+    text-align: justify;
+}
+
+/*
+////////////////////////////////////////////
+////////////////////////////////////////////
+*/
+/*ESTILOS TESTING */
+
+#poema{
+    font-family: 'Sanchez', serif;
+    margin-top: 100px;
+    text-indent: 20px;
+    padding: 30px;
+    text-align: justify;
+    background: rgba(51,51,51,0.2)
+}
+
+address {
+    font-size: 12px;
+    text-align: right
+}
+
+/*
+////////////////////////////////////////////
+////////////////////////////////////////////
+*/
+/*ESTILOS DATA */
+#data {
+    padding: 0 20px;
+    margin-top: 90px;
+}
+
+#data ul{
+    display: block;
+    list-style-type: square;
+    padding-bottom: 20px;
+}
+
+#data p{
+    padding: 0 20px 20px 20px;
+}
+
+/*ESTILOS TESTING */
+#testing {
+    padding: 0 20px;
+}
+
+#testing ul{
+    display: block;
+    list-style-type: square;
+}
+
+#testing h4, h3{
+    padding: 20px;
+}
+
+#testing p{
+    padding: 0 20px 20px 20px;
+}
+
+/*ESTILOS LIDERAZGO */
+#liderazgo {
+    padding: 0 20px;
+}
+
+#liderazgo ul{
+    display: block;
+    list-style-type: square;
+}
+
+#liderazgo p{
+    padding: 20px;
+}
+
+/*
+////////////////////////////////////////////
+////////////////////////////////////////////
+*/
+/*TRANSFORMACION RESPONSIVE */
+
+@media (min-width: 1024px){
+    .contenedor {
+        width: 1000px;
+    }
+}

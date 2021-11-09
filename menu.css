@@ -1,0 +1,79 @@
+/* ESTILOS PARA EL MENU */
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    display: none;
+    float: right;
+    margin: 18px 0;
+    padding: 10px;
+    border-left: 1px solid #fff;
+}    
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul {
+    margin-top: 16px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+////////////////////////////////////////////
+////////////////////////////////////////////
+*/
+/*TRANSFORMACION RESPONSIVE */
+
+
+@media (max-width:768px) {
+    
+    header label{
+        display: block;
+        
+    }
+
+    .menu {
+        position: absolute;
+        width: 70%;
+        background: rgba(51,51,51,0.9);
+        top: 68px;
+        margin-left: -72%;
+        transition: all 0.5s;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+       /* border-top: */
+    }
+
+    .menu li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    #menu-bar:checked ~ .menu {
+        margin: 0;
+    }
+}
